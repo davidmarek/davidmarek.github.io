@@ -2,5 +2,5 @@
 # Add items for each banner image in the carousel
 #
 # Images are expected to be located in `static/assets/img/`.
-- src: landing/prague.jpg
-  title: Prague, the city where I live
+- src: landing/prague_landing.jpg
+  title: Prague, the city where I live. (Photo by Anthony DELANOIX on Unsplash)
