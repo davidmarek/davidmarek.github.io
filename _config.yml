@@ -1,71 +1,112 @@
-# Welcome to Jekyll!
+# main text of home
+name: David Marek
+bio: A senior software engineer at Microsoft
 
-# Website settings
-title: David Marek
-description: David's blog about software engineering
-keywords: david marek, software, software engineer, azure
-baseurl:  / # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
-url: https://davidmarek.github.io/  # url should be 'http://<github_username>.github.io/homepage' as before
-# url: http://127.0.0.1:4000
-img_path: /static/assets/img/blog  # url should be '/homepage/static/assets/img/blog' as before
+# twitter summary info
+description: A blog about technology and stuff related
 
-# author -- index page "about me" section
-author:  # change following line to your infomation.
-  name: David Marek  # Be used at blog posts' author.
-  first_name: David  # Be used at index page about me section.
-  last_name: Marek  # Be used at index page about me section.
-  avatar: /static/assets/img/landing/avatar.jpg  # upload your avatar at directory and edit it.
-  github_username: davidmarek  # Leave blank if you don't have now
-  linkedin_id: davidmarek # Leave blank if you don't have now
-  facebook_username:   # Leave blank if you don't have now
-  twitter_username: dave_marek  # Leave blank if you don't have now
-  email: david@marek.me  # Leave blank if you don't have now
-  cv:   # An online CV can be printed as PDF, leave blank if you don't have now
-  # skill icons are on avatar's left and right side. Reference urls are http://fontawesome.io/ and http://fizzed.com/oss/font-mfizz
-  skill_icon1:
-    - name: icon-csharp
-    - name: icon-nodejs
-  skill_icon2:
-    - name: icon-python
-    - name: icon-azure
-  desc: Senior software engineer with experience in backend development, architecture design, and Azure cloud solutions. My skills include C# and asp.net, python, node.js, building microservices with docker and Kubernetes, or Azure Service Fabric.
- # Describe yourself.
+# if it's an external image, update below for true
+# better with square images
+external-image: false
+picture: assets/images/profile.jpg
 
-# comment
-#disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-#  name: jalpc
+# If you want to include your resume, set to true
+# and specify source (external or local).
+resume: true
+resume-external: true
+resume-url: https://linkedin.com/in/davidmarek
 
-# analytics
-## google analytics
-ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-  id: UA-93473370-3
+url: https://davidmarek.github.io
+# your url: http://USERNAME.github.io
 
-## google optimize
-go:
-  # id:
+permalink: /:title/
 
-## growingIO
-gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
-  # id:
+# To enable google analytics, supply your token below
+# analytics-google: 'UA-MYANALYTICS'
 
-## donation
-donation: on  # type 'on'/'off' to choice display donation button at post page or not
+# To enable piwik tracking, supply your url & site ID below
+# analytics-piwik-url: 'piwik.my-host.com'
+# analytics-piwik-id: 1
 
-## carousels
-index_carousel: on  # index page carousel switch
-blog_carousel: on  # blog page carousel switch
+# if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: mydisqus # enter this from your disqus account
+  categories: [] # only show disqus for posts that have these categories
 
-# scss
-sass:
-  style: compressed
+# if you don't have any of social below, comment the line
+#facebook: dave.marek
+twitter: dave_marek
+# google: mygoogle
+# instagram: myinstagram
+# pinterest: mypinterest
+linkedin: davidmarek
+# youtube: myyoutube
+# spotify: myspotify
+github: davidmarek
+# gitlab: mygitlab
+# lastfm: mylastfm
+# stackoverflow: 7044681/mystackoverflow
+# quora: userquora
+# reddit: username
+#medium: medium
+# vimeo: myvimeo
+# lanyrd: mylanyrd
+email: david@marek.me
 
-# Build settings
-encoding: utf-8
+authors:
+    johndoe:
+        name: John Doe
+        bio: A Man who travels the world eating noodles
+        external-image: false
+        picture: assets/images/profile.jpg
+        twitter: johndoe
+    jamesfoster:
+        name: James Foster
+        bio: A Man who develops software with coffee
+        external-image: false
+        picture: assets/images/james.jpg
+        twitter: jamesfoster
 
-# other settings
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
+# do you want a larger site? change the option below
+# options: [normal, large] | default: normal
+# normal = 560px / large = 810px
+width: normal
 
+# if you don't need pagination, comment the *paginate* configs below
+# paginate: 5
+# paginate_path: "blog/:num/"
+
+# if you don't need projects, comment the *projects* configs below
+#projects: true
+
+# if you don't need "about" or "blog", comment them out below
+#about: true
+blog: true
+
+# do you want to show the "read time" of the posts?
+read-time: true
+
+# do you want to show the "tags" inside the posts?
+show-tags: true
+
+# related posts inside a post?
+related: true
+
+# Display links for next and previous posts for the specified categories
+post-advance-links: [blog]
+
+# show author block at the end of a post ?
+show-author: false
+
+# do you want some animations?
+animation: true
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-admin
+
+jekyll-mentions:
+    base_url: https://github.com
